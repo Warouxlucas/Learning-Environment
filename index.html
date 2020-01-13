@@ -8,6 +8,7 @@
     <style>
     body{
         margin:50px 250px 50px 250px;
+        font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;
     }
     </style>
 </head>
@@ -26,18 +27,89 @@
 
 <h3>Ceci est un titre</h3>
 
-<h5>Ceci est &#xE9;galement un titre</h5>
+<h5>Ceci est également un titre</h5>
 
 <h6>Ceci est toujours un titre</h6>
-<p>Le symbole <code>#</code> permet de configurer la ligne de texte qui suit comme &#xE9;tant un <strong>titre</strong>. Il peut &#xEA;tre utilis&#xE9; <em>plusieurs fois</em> afin de cr&#xE9;er un sous-titre &#xE0; chaque fois moins important.</p>
+<p>Le symbole <code>#</code> permet de configurer la ligne de texte qui suit comme étant un <strong>titre</strong>. Il peut &#xEA;tre utilis&#xE9; <em>plusieurs fois</em> afin de cr&#xE9;er un sous-titre &#xE0; chaque fois moins important.</p>
 <div><br>
     # Ceci est un titre </br>
     #### Ceci est également un titre</br>
     ###### Ceci est toujours un titre
-
-
 </code>
-
 </div>
+<h2>Emphase</h2>
+<p><i>Ce texte est en italique</i></p>
+<p><b>Ce texte est en gras</b></p>
+<p><i>Il est <b>possible</b> de les combiner</i></p>
+<p>Pour accentuer un texte (en <i>italique</i> ou en <i>gras</i>, par exemple), il suffit d'entourer la portion de texte souhaitée par les symboles <code>*</code>ou <code>_</code>(italique), ou <code>**</code>ou <code>__</code>(gras).</p>
+<pre><code>*Ce texte sera en italique*
+    _Ce texte sera également en italique_
+    
+    **Ce texte sera en gras**
+    __Ce texte sera également en gras__
+    
+    _Il est **possible** de les combiner_
+    </code>
+</pre>
+<p><b>Attention:</b> bien qu'il existe deux manières différentes d'accentuer son texte, celles-ci ne sont pas interchangeables (**cette portion de texte ne sera pas en gras__)!</p>
+<h6>Liste organisée</h6>
+
+<ol>
+    <li>Une puce</li>
+    <li>Une autre puce
+    <ol>
+    <li>Et encore une autre puce !</li>
+    </ol>
+    </li>
+</ol>
+<p>Pour créer une liste organisée, il suffit de commencer les portions de texte souhaitées par des numéros, suivis du symbole <code>.</code>.</p>
+<pre>
+    <code>
+        1. Une puce
+        1. Une autre puce
+            1. Et encore une autre puce !
+        
+    </code>
+</pre>
+<h2>Faire une citation</h2>
+
+<p>Pour demarquer une citation il suffit d'ajouter un > devant votre citation.</p>
+<blockquote>
+<p>Cela se présente de cette manière.</p>
+</blockquote>
+<h2>Mettre un lien</h2>
+
+<p>Il suffit de mettre le mot sur lequel vous souhaitez faire votre lien entre crochets [ ], puis votre lien entre parenthèses ( ).</p>
+<p>Rendez-vous sur <a href="http://www.github.com">Github</a> !</p>
+<h2>Inline code</h2>
+
+<p>Pour désigner un mot ou une phrase comme code, placez-le entre guillemets (`).</p>
+<p><b>Cela se présente de cette manière :</b><br>
+<code><p> j'écris mon code</p></code></p>
+<h2>Comment ajouter une image avec markdown ?</h2>
+
+<p>L'ajout d'image peut se faire de 2 manières:</p>
+<ul>
+<li><b>Localement :</b><br>
+Il suffit de preciser votre alt entre crochet et le lien entre parenthèse.</li>
+</ul>
+<p>![image alt]<br>
+(cheminVersImage/nomImage.extention)</p>
+<p><img src="image_Markdown.jpg" alt="image_Markdown"></p>
+<blockquote>
+<p>Notez que si votre image ce trouve au même niveau que votre document, il n'est pas nécessaire de préciser le chemin.</p>
+</blockquote>
+<ul>
+<li><b>Via url :</b><br>
+De la même manière il suffit de preciser votre alt entre crochet et le lien entre parenthèse.</li>
+</ul>
+<p>![image alt]<br>
+(<a href="https://lieuHebergementDeImage.com/ouSeTrouve/nomImage.extention">https://lieuHebergementDeImage.com/ouSeTrouve/nomImage.extention</a>)</p>
+<p><img src="https://wanna-joke.com/wp-content/uploads/2014/09/funny-copy-paste-meme.jpg" alt="copy_Paste"></p>
+<blockquote>
+<p>Notez que vous pouvez copier le lien via un simple click droit + copier le lien de l'image.</p>
+</blockquote>
+<p><a href="./document2.html">Lire la suite</a></p>
+<p><a href="./readme.md">Retour vers le README</a></p>
 </body>
 </html>
