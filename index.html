@@ -5,12 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style>
-    body{
-        margin:50px 250px 50px 250px;
-        font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;
-    }
-    </style>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+      </head> 
 </head>
 <body>
 <h1>En quoi consiste Markdown ?</h1>
@@ -31,18 +28,18 @@
 
 <h6>Ceci est toujours un titre</h6>
 <p>Le symbole <code>#</code> permet de configurer la ligne de texte qui suit comme étant un <strong>titre</strong>. Il peut &#xEA;tre utilis&#xE9; <em>plusieurs fois</em> afin de cr&#xE9;er un sous-titre &#xE0; chaque fois moins important.</p>
-<div><br>
+<pre class="classPre">
     # Ceci est un titre </br>
     #### Ceci est également un titre</br>
     ###### Ceci est toujours un titre
-</code>
+</pre>
 </div>
 <h2>Emphase</h2>
 <p><i>Ce texte est en italique</i></p>
 <p><b>Ce texte est en gras</b></p>
 <p><i>Il est <b>possible</b> de les combiner</i></p>
 <p>Pour accentuer un texte (en <i>italique</i> ou en <i>gras</i>, par exemple), il suffit d'entourer la portion de texte souhaitée par les symboles <code>*</code>ou <code>_</code>(italique), ou <code>**</code>ou <code>__</code>(gras).</p>
-<pre><code>*Ce texte sera en italique*
+<pre class="classPre"><code>*Ce texte sera en italique*
     _Ce texte sera également en italique_
     
     **Ce texte sera en gras**
@@ -52,7 +49,29 @@
     </code>
 </pre>
 <p><b>Attention:</b> bien qu'il existe deux manières différentes d'accentuer son texte, celles-ci ne sont pas interchangeables (**cette portion de texte ne sera pas en gras__)!</p>
-<h6>Liste organisée</h6>
+<h2>Listes</h2>
+<p>Il y a deux types de listes: les <b>listes à puces</b> et les <b>listes organisées</b>. Markdown requiert des symboles différents en fonction de la liste utilisée.</p>
+<h4>Listes à puces</h4>
+
+<ul>
+<li>Une puce</li>
+<li>Une autre puce
+<ul>
+<li>Une sous-puce</li>
+<li>Une autre sous-puce</li>
+</ul>
+</li>
+<li>Et encore une autre puce !</li>
+</ul>
+<p>Le symbole <code>*</code> permet la création d'une liste à puce. A noter qu'il est possible de les imbriquer.</p>
+<pre class="classPre"><code>* Une puce
+* Une autre puce
+    * Une sous-puce
+    * Une autre sous-puce
+* Et encore une autre puce !
+</code></pre>
+
+<h4>Liste organisée</h4>
 
 <ol>
     <li>Une puce</li>
@@ -63,14 +82,10 @@
     </li>
 </ol>
 <p>Pour créer une liste organisée, il suffit de commencer les portions de texte souhaitées par des numéros, suivis du symbole <code>.</code>.</p>
-<pre>
-    <code>
-        1. Une puce
-        1. Une autre puce
-            1. Et encore une autre puce !
-        
-    </code>
-</pre>
+<pre class="classPre"><code>* Une puce
+* Une autre puce
+    * Et encore une autre puce !
+    </code></pre>
 <h2>Faire une citation</h2>
 
 <p>Pour demarquer une citation il suffit d'ajouter un > devant votre citation.</p>
@@ -85,7 +100,8 @@
 
 <p>Pour désigner un mot ou une phrase comme code, placez-le entre guillemets (`).</p>
 <p><b>Cela se présente de cette manière :</b><br>
-<code><p> j'écris mon code</p></code></p>
+
+<pre class="classPre"><code>&lt;p&gt;j'écris mon code&lt;/p&gt;</code></pre>
 <h2>Comment ajouter une image avec markdown ?</h2>
 
 <p>L'ajout d'image peut se faire de 2 manières:</p>
@@ -95,7 +111,7 @@ Il suffit de preciser votre alt entre crochet et le lien entre parenthèse.</li>
 </ul>
 <p>![image alt]<br>
 (cheminVersImage/nomImage.extention)</p>
-<p><img src="image_Markdown.jpg" alt="image_Markdown"></p>
+<p><img src="images/image_Markdown.jpg" alt="image_Markdown"></p>
 <blockquote>
 <p>Notez que si votre image ce trouve au même niveau que votre document, il n'est pas nécessaire de préciser le chemin.</p>
 </blockquote>
