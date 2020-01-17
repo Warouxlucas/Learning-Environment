@@ -10,3 +10,4 @@
  * Attention à la semantique > navigation à refaire dans le header
  * rendre les interactions plus évidante
  * trouver un meilleur Gif (Attention aux droits(Gifer))
+ * responsivité à revoir @media ect..

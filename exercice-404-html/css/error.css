@@ -1,0 +1,108 @@
+
+body{
+    height:100vh;
+    background-image: linear-gradient(rgba(190, 190, 190, 0.493), whitesmoke, rgba(190, 190, 190, 0.493));
+}
+main{
+    display: flex;
+    width: 100%;
+    height:100%;
+}
+section{
+    min-width: 525px;
+    width: 50%;
+    height:60%;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    position: relative;
+}
+.flex_saved_me{
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  max-height: 200px;
+}
+h1{
+  margin: auto;  
+  padding-top: 100px;
+  animation-delay: 1.8s;
+  font-size: 5em;
+  
+}
+.link{
+  margin:auto;
+
+  animation: fade-in-up 6s linear;
+  
+  
+}
+
+
+.raven{
+    width: 200px;
+    height: 120px;
+    background-image: url("../images/raven.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: bird 5s linear;
+
+    transform: scale(-1, 1);
+    /* animation-iteration-count: infinite; */
+    
+    right: 25px;
+    top: 25px;
+    position: absolute;
+}
+@keyframes bird {
+    0% {
+      transform: scale(1, 1);
+      right: -500px;
+      top:0px;
+    }
+    25% {
+      top:75px;
+    }
+    35% {
+      right: 350px;
+      top:30px;
+    }
+    45% {
+
+      top:30px;
+      right: 350px;
+    }
+    49%{
+      transform: scale(1, 1);
+    }
+    50%{
+      top:0px;
+      right: 1400px;
+    }
+    51%{
+      transform: scale(-1, 1);
+    }
+    75%{ 
+      top:75px;
+    }
+    100% { 
+
+      right: 25px;
+      top: 25px;
+    } 
+}
+
+@keyframes fade-in-up{
+  
+    0% {
+      opacity:0;
+    }
+    90% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  
+}
