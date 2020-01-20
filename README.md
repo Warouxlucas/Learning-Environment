@@ -7,7 +7,7 @@ Réalisé par : Waroux lucas.
 
  * corriger la div inclinée > clip path
  * Attention à la semantique > navigation à refaire dans le header
- * rendre les interactions plus évidante
+ * rendre les interactions plus évidentes.
  * trouver un meilleur Gif (Attention aux droits(Gifer))
  * responsivité à revoir @media ect..
     
